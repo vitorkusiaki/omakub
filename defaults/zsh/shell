@@ -1,0 +1,16 @@
+# History control
+HISTFILE=~/.zsh_history
+HISTSIZE=32768
+SAVEHIST=32768
+setopt appendhistory
+setopt sharehistory
+setopt incappendhistory
+
+# Autocompletion
+autoload -Uz compinit
+compinit
+
+# Set complete path
+export PATH="./bin:$HOME/.local/bin:$HOME/.local/share/omakub/bin:$PATH"
+
+export OMAKUB_PATH="$HOME/.local/share/omakub"

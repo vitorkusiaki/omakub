@@ -1,0 +1,11 @@
+# Simple prompt with path in the window/pane title and caret for typing line
+setopt prompt_subst
+PROMPT='%F{blue}%~%f %# '
+
+# Load theme if available
+if [ -f ~/.local/share/omakub/themes/theme.zsh ]; then
+  source ~/.local/share/omakub/themes/theme.zsh
+  if [ -n "$OMAKUB_THEME_COLOR" ]; then
+    PROMPT="%F{$OMAKUB_THEME_COLOR}%~%f %# "
+  fi
+fi

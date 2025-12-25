@@ -1,0 +1,2 @@
+export OMAKUB_THEME_COLOR="red"
+export OMAKUB_THEME_ACCENT="red"
